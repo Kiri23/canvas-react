@@ -11,10 +11,9 @@ import Canvas from './components/Canvas'
 
 class App extends Component {
   render() {
-    const sound = new (window.AudioContext || window.webkitAudioContext)()
     return (
       <div className="App">
-            <Canvas sound={sound}/>
+            <Canvas />
       </div>
     );
   }

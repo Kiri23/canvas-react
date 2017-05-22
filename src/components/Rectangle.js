@@ -22,8 +22,10 @@ class Rectangle extends React.Component {
     const ctx = this.context
     // Hexadecimal Color Red
     ctx.beginPath()
+    ctx.save()
     ctx.fillStyle="#FF0000";
     ctx.fillRect(this.x, this.y, this.width, this.height)
+    ctx.restore()
     ctx.closePath()
     return this
   }

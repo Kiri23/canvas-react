@@ -21,8 +21,14 @@ class Circle extends React.Component {
   draw() {
     const ctx = this.context
     ctx.beginPath()
+    ctx.save()
+    ctx.fillStyle = '#3AdA28'
+    ctx.strokeStyle = '#6AFA88'
+    ctx.lineWidth = '10'
     ctx.arc(this.x, this.y, this.radius, this.start, this.end, this.clockwise)
     ctx.stroke()
+    ctx.fill()
+    ctx.restore()
     ctx.closePath()
     return this
   }

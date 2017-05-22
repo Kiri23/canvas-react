@@ -14,9 +14,11 @@ class MouseEvents {
     }, false);
     return this
   }
+  
   getCoordinates(){
     return this.mouse
   }
+  
   click() {
     this.canvas.addEventListener('click', e => {
       console.log(this.mouse)
