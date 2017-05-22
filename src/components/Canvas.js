@@ -24,9 +24,7 @@ class Canvas extends React.Component {
     const vh = canvas.height = window.innerHeight
 
     mouse.move().click()
-
     const hero = new BathroomMan(ctx)
-
 
     const block = new Block({
       x: 10,
